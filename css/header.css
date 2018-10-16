@@ -3,6 +3,7 @@
     width: 100%;
 
     background-color: #f47749;
+    border-bottom: 1px solid #ffffff;
 }
 
 .logo-box{
@@ -42,20 +43,24 @@
 
 .menu-item{
     width: 100%;
-    margin-bottom: 1px;
+    border: 1px solid #ffffff;
     background-color: #f9933e;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .menu-item a{
     color: #ffffff;
-    font-family: 'Niramit', sans-serif;
     text-decoration: none;
     height: 100%;
     width: 100%;
 }
 
 @media screen and (min-width: 768px) {
+    .head{
+        height: 150px;
+    }
+
     .btn-menu{
         display: none;
     }

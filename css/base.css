@@ -1,14 +1,29 @@
 /* couleur orange : #f9933e */
 /* couleur rouge : #f47749 */
 /* couleur blanche : #ffffff */
+/* couleur noire (pour texte ou titre) : #000000 */
 
-html, body{
+/* H1 => Bangers */
+/* H2 =>  */
+/* Autre => Niramit */
+
+html, body, h2, p{
     padding: 0;
     margin: 0;
 }
 
+html{
+    font-size: 0.625em;
+    font-size: calc(1em * 0.625);
+
+    font-family: 'Niramit', sans-serif;
+}
+
 body{
     width: 100%;
+    background-color: #f9933e;
+
+    font-size: 1.4rem;
 }
 
 .flex-box{
@@ -42,4 +57,11 @@ body{
 
 .d-none{
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 0.75em;
+        font-size: calc(1em * 0.75);
+    }
 }

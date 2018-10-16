@@ -1,1 +1,41 @@
+.page-content{
+    margin: 10px;
+}
 
+.page-title{
+    width: 100%;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 3.5rem;
+}
+
+.game-title{
+    margin-bottom: 5px;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+
+.game-title a{
+    text-decoration: none;
+    color: #f47749;
+}
+
+.resultat-box{
+    width: 100%;
+    border: 1px solid #ffffff;
+
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .resultat-box{
+        width: 30%;
+    }
+
+    .game-title{
+        text-align: center;
+    }
+}
