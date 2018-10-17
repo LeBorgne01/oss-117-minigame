@@ -10,7 +10,7 @@ var reply =
         "reply": "23 à 0 ! C'est la piquette Jack! Tu sais pas jouer Jack! T'es mauvais!",
         "onScreen": "23 à 0 ! C'est la piquette Jack! ______________________! T'es mauvais!",
         "answer": "Tu sais pas jouer Jack",
-        "url"     : "tes-mauvais.mp3"
+        "url"     : "tes_mauvais.mp3"
     },
     {
         "reply": "Et elle geule mon vieux, on dirait une poissonnière de Ménilmontant.",

@@ -1,4 +1,4 @@
-// initialisation des reply rdm
+// initialisation des repliques rdm
 var nbGameReply  = 5;
 var replyCopy    = reply.slice();
 var rdmReply     = [];
@@ -11,8 +11,10 @@ var fieldReply   = document.getElementById('reply');
 var validate     = document.getElementById('validate');
 var score        = document.getElementById('score');
 var sound        = document.getElementById('sound');
+var questions    = document.getElementById('questions');
 
-score.innerHTML  = 0;
+score.innerHTML     = 0;
+questions.innerHTML = nbGameReply;
 
 
 // on récupère le nombre voulu de répliques aléatoirement
@@ -29,21 +31,32 @@ goodAnswer           = rdmReply[part]['answer'];
 
 
  function nextAnswer(){
+     validate.disabled = 'disabled';
+     fieldAnswer.disabled = 'disabled';
      let sound = new Audio('sounds/'+ rdmReply[part]['url']);
      sound.play();
+     sound.onended = function(){
 
-    if(replaceAccent(fieldAnswer.value) === replaceAccent(goodAnswer)){
-        nbGoodAnswer ++;
-        score.innerHTML = nbGoodAnswer;
+       if(replaceAccent(fieldAnswer.value) === replaceAccent(goodAnswer)){
+           nbGoodAnswer ++;
+           score.innerHTML = nbGoodAnswer;
 
-    }
-    part ++;
 
-    if(part < nbGameReply){
-        fieldReply.innerHTML = rdmReply[part]['onScreen'];
-        goodAnswer = rdmReply[part]['answer'];
-        fieldAnswer.value = '';
-    }
+       }
+       part ++;
+       questions.innerHTML = nbGameReply - part;
+
+       if(part < nbGameReply){
+           fieldReply.innerHTML = rdmReply[part]['onScreen'];
+           goodAnswer = rdmReply[part]['answer'];
+           fieldAnswer.value = '';
+       }
+       validate.disabled = '';
+       fieldAnswer.disabled = '';
+
+  };
+
+
 }
 
 
