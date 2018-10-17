@@ -38,7 +38,7 @@
     justify-content: space-around;
 }
 
-.btn-answer{
+.btn-answer, .btn-new-game{
     width: 100%;
     min-height: 30px;
     margin: 2px;
@@ -51,12 +51,13 @@
     cursor: pointer;
 }
 
+
 @media screen and (min-width: 768px) {
     .game-question{
         margin-bottom: 30px;
     }
 
-    .btn-answer{
+    .btn-answer, .btn-new-game{
         width: 40%;
         margin-bottom: 20px;
     }
