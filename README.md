@@ -18,3 +18,4 @@ Le meilleur score est sauvegarder dans un cookie pour chaque jeu.
 
 L'application est responsive.
 
+Le jeu pourrait être amélioré en poussant les regex d'analyse de réponse aux questions afin d'éviter les erreurs d'orthographe. On peut aussi lier notre jeu à une BD afin de ne plus avoir d'objet JS dans le projet pour stocker nos données
