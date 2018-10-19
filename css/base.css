@@ -16,12 +16,16 @@ html{
     font-size: 0.625em;
     font-size: calc(1em * 0.625);
 
+    height: 100%;
+
     font-family: 'Niramit', sans-serif;
 }
 
 body{
     width: 100%;
     background-color: #f9933e;
+
+    min-height: 100%;
 
     font-size: 1.4rem;
 }

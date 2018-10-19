@@ -1,5 +1,9 @@
 .foot{
     display: flex;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
     padding: 2px;
     background-color: #000000;
     color: #ffffff;
