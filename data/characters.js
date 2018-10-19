@@ -32,5 +32,22 @@ var listCharacter =
          "Von Zimmel",
         "Aemand Lesignac"
     ]
+
+  },
+  {
+    "answer": "Armand Lesignac",
+    "url": "lesignac.png",
+    "other":[
+         "William Trumandous",
+        "Noël Flantier"
+    ]
+},
+  {
+    "answer": "Jack Jefferson",
+    "url": "lesignac.png",
+    "other":[
+         "Kutner",
+        "Heinrich"
+    ]
   }
 ];
