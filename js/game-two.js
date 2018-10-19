@@ -6,7 +6,7 @@ var nbQuestionDone;
 var nbGoodAnswer;
 
 var gameQuestion = document.getElementById('game-question');
-var answerBox = document.getElementById('answer-box');
+var answerBox = document.getElementById('answer-box-two');
 var gameScore = document.getElementById('game-score');
 var bestScore = document.getElementById('best-score');
 
@@ -32,7 +32,7 @@ answerBox.addEventListener('click', function(event){
             setScore(nbGoodAnswer);
         }
         else{
-            
+
         }
 
         nbQuestionDone++;

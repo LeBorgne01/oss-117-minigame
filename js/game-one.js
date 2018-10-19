@@ -7,9 +7,9 @@ var part         = 0;
 var goodAnswer   = '';
 
 var fieldAnswer  = document.getElementById('answer');
-var fieldReply   = document.getElementById('reply');
+var fieldReply   = document.getElementById('game-question');
 var validate     = document.getElementById('validate');
-var score        = document.getElementById('score');
+var score        = document.getElementById('game-score');
 var sound        = document.getElementById('sound');
 var questions    = document.getElementById('questions');
 

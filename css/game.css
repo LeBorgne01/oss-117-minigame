@@ -32,7 +32,37 @@
     background-color: #f47749;
 }
 
-.answer-box{
+.answer-box-one{
+    text-align: center;
+}
+
+.answer-input{
+    background-color: #f47749;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Niramit', sans-serif;
+    width: 80%;
+    text-align: center;
+}
+
+.answer-validate{
+    background-color: #f47749;
+    width: 30%;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    font-family: 'Niramit', sans-serif;
+    border-radius: 2px;
+    box-shadow: 2px 2px grey;
+}
+
+.answer-validate:active{
+    background-color: #FF8B5D;
+}
+
+.answer-box-two{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
