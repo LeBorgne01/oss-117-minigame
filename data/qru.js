@@ -16,7 +16,7 @@ var qru = [
         'other' : [
             'une belle chemise',
             'une voiture',
-            'une face de cuech',
+            'une face de quetsche',
             ''
         ]
     },
