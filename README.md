@@ -8,10 +8,10 @@ le site entier est moche et vieux pour correspondre à l'éthique du film (tous 
 Un menu nous propose 3 jeux:
 
 -"Réplicatrou": une réplique du film s'affiche, il faut ensuite trouver la partie manquante de la phrase .
-  la réplique est alors joué une fois la réponse validé; il est donc préferable de jouer avec le son.
+  La réplique est alors joué une fois la réponse validé; il est donc préferable de jouer avec le son.
 
--"une question une réponse": la question s'affiche, il faut trouver la bonne réponse parmi quatre placées aléatoirement.
--"une image un nom" : une image apparait, on a alors le choix entre plusieurs prénoms placées aléatoirement.
+-"une question une réponse": La question s'affiche, il faut trouver la bonne réponse parmi quatre placées aléatoirement.
+-"une image un nom" : Une image apparait, on a alors le choix entre plusieurs prénoms placées aléatoirement.
 
 A chaque fois on a le score actuel et le meilleur score pour chaque jeu.
 Le meilleur score est sauvegarder dans un cookie pour chaque jeu.
