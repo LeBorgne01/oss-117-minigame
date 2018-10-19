@@ -44,7 +44,7 @@ var listCharacter =
 },
   {
     "answer": "Jack Jefferson",
-    "url": "jack.png",
+    "url": "jack.PNG",
     "other":[
          "Kutner",
         "Heinrich"
