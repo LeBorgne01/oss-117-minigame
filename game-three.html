@@ -4,36 +4,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
-    <title>OSS 117, Une image un nom</title>
+    <title>OSS 117, Une question une réponse</title>
 
-    <article class="">
-        <div class="" >
-            <p>Questions restantes: <strong id='questions'></strong> </p>
-        </div>
-        <div class="" >
-            <p>Score: <strong id='score'></strong> </p>
-        </div>
-        <div class="" >
-
-        </div>
-        <div class="">
-
-        </div
-        </article>
-
-            <!-- Scripts -->
-            <script type="text/javascript" src="data/characters.js">
-
-            </script>
-            <script type="text/javascript" src="js/game-three.js">
-
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/game-two.css">
+    <link rel="stylesheet" href="css/foot.css">
 
 </head>
 <body>
 
-<!-- Scripts -->
+    <header class="flex-box head">
+        <div class="logo-box h-100">
+            <a href="index.html">
+                <img class="mw-100 mh-100 logo-img" src="img/logo.png" alt="">
+            </a>
+        </div>
 
+        <nav class="flex-box menu">
+            <button id="btn-menu" class="btn-menu" type="button">MENU</button>
+            <div class="nav-box">
+                <ul class="simple-list">
+                    <li class="menu-item"><a href="game-one.html">Réplicatrou</a></li>
+                    <li class="menu-item"><a href="game-two.html">Une question une réponse</a></li>
+                    <li class="menu-item"><a href="game-three.html">Une image un nom</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="page-title">Une question une réponse</h1>
+
+    <section class="game-content">
+        <aside class="score-box">
+            <table>
+                <tr>
+                    <td>Meilleur score :</td>
+                    <td id="best-score"></td>
+                </tr>
+                <tr>
+                    <td>Score :</td>
+                    <td id="game-score"></td>
+                </tr>
+            </table>
+        </aside>
+
+        <article class="game-box">
+            <p id="game-question" class="game-question"></p>
+
+            <div id="answer-box" class="answer-box">
+
+            </div>
+        </article>
+    </section>
+
+    <footer class="foot">
+        <p>Design: Brevet / Danjoux</p>
+    </footer>
+
+<!-- Scripts -->
+<script type="text/javascript" src="js/menu.js"></script>
+
+<script type="text/javascript" src="js/cookie.js"></script>
+
+<script type="text/javascript" src="data/characters.js"></script>
+<script type="text/javascript" src="js/game-three.js"></script>
 </body>
 </html>

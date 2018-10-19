@@ -1,19 +1,36 @@
-var character[
+var characters =
+[
 
   {
-    "nom": "Hubert Bonisseur de la bath",
-    "url": "../img/hubert.png"
+    "answer": "Hubert Bonisseur de la bath",
+    "url": "hubert.png",
+    "other":[
+        "Jack Jefferson",
+        "Armand Lesignac"
+    ]
   },
   {
-    "nom": "Princesse d'Al Taourk",
-    "url": "../img/princesse.jpg"
+    "answer": "Princesse Al Taourk",
+    "url": "princesse.jpg",
+    "other":[
+         "Raymond Pelletier",
+        "Sliman"
+    ]
   },
   {
-    "nom": "Larmina",
-    "url": "../img/larmina.png"
+    "answer": "Larmina",
+    "url": "larmina.png",
+    "other":[
+         "Michel Drucker",
+        "Dolorès Koulechov"
+    ]
   },
   {
-    "nom": "Gerhard Moeller",
-    "url": "../img/moeller.png"
-  },
-]
+    "answer": "Gerhard Moeller",
+    "url": "moeller.png",
+    "other":[
+         "Von Zimmel",
+        "Aemand Lesignac"
+    ]
+  }
+];
