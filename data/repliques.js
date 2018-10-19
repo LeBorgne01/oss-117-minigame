@@ -2,7 +2,7 @@ var reply =
 [
     {
         "reply": "Mais ce sera surtout l'occasion de rencontrer le gratin Cairote. Et non pas le gratin de pomme de terre.",
-        "onScreen": "Mais ce sera surtout l'occasion de rencontrer le gratin Cairote. Et non pas ___________________________.",
+        "onScreen": "Mais ce sera surtout l'occasion de rencontrer le gratin Cairote. Et non pas ________________________.",
         "answer": "le gratin de pommes de terre",
         "url"     : "gratin_pomme_de_terre.mp3"
     },
@@ -21,13 +21,13 @@ var reply =
 
     {
         "reply": "Des millions ?! Haha, des millions ! Vous êtes charmante mais vous voyez déjà ce que ça fait un million?",
-        'onScreen': "Des millions ?! Haha, des millions ! Vous êtes charmante ______________________________________________?",
+        'onScreen': "Des millions ?! Haha, des millions ! Vous êtes charmante ____________________?",
         "answer": "mais vous voyez déjà ce que ça fait un million",
         "url"     : "des_millions.mp3"
     },
     {
         "reply": "Quelle religion peut-etre assez stupide pour priver ses fideles d'un tel plaisir? La religion musulmane.",
-        "onScreen": "Quelle religion peut-etre assez _______________________________ d'un tel plaisir? La religion musulmane.",
+        "onScreen": "Quelle religion peut-etre assez ________________________ d'un tel plaisir? La religion musulmane.",
         'answer': "stupide pour priver ses fideles",
         "url"     : "religion_musulmane.mp3"
     }

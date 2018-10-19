@@ -1,6 +1,6 @@
-var nbGameReply = 4;
-var reply;
-var randomReply;
+var nbGameQuestion = 4;
+var questions;
+var randomQuestions;
 
 var nbQuestionDone;
 var nbGoodAnswer;
@@ -27,7 +27,7 @@ setScore(nbGoodAnswer);
 answerBox.addEventListener('click', function(event){
     var btnElement = event.target;
     if(btnElement.matches('button.btn-answer')){
-        if(btnElement.innerHTML == randomReply[nbQuestionDone].answer){
+        if(btnElement.innerHTML == randomQuestions[nbQuestionDone].answer){
             nbGoodAnswer++;
             setScore(nbGoodAnswer);
         }
@@ -37,7 +37,7 @@ answerBox.addEventListener('click', function(event){
 
         nbQuestionDone++;
 
-        if(nbQuestionDone == nbGameReply){
+        if(nbQuestionDone == nbGameQuestion){
             endGame();
         }
         else{
@@ -53,22 +53,22 @@ answerBox.addEventListener('click', function(event){
 });
 
 function initGame(){
-    reply = qru.slice();
-    randomReply = [];
+    questions = qru.slice();
+    randomQuestions = [];
     nbQuestionDone = 0;
     nbGoodAnswer = 0;
 
-    for(var i = nbGameReply; i > 0; i--){
-        var index = Math.floor(Math.random() * reply.length);
-        var toAdd = reply.splice(index, 1)[0];
-        randomReply.push(toAdd);
+    for(var i = nbGameQuestion; i > 0; i--){
+        var index = Math.floor(Math.random() * questions.length);
+        var toAdd = questions.splice(index, 1)[0];
+        randomQuestions.push(toAdd);
     }
 }
 
 function initQuestion(){
     answerBox.innerHTML = '';
 
-    var question = randomReply[nbQuestionDone];
+    var question = randomQuestions[nbQuestionDone];
     gameQuestion.innerHTML = question.question;
 
     var answer = document.createElement('button');
@@ -95,7 +95,7 @@ function initQuestion(){
 }
 
 function setScore(score){
-    gameScore.innerHTML = score + '/' + nbGameReply;
+    gameScore.innerHTML = score + '/' + nbGameQuestion;
 }
 
 function endGame(){

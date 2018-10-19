@@ -7,11 +7,11 @@ var nbQuestionDone;
 var nbGoodAnswer;
 
 var gameQuestion = document.getElementById('game-question');
-var answerBox = document.getElementById('answer-box');
+var answerBox = document.getElementById('answer-box-three');
 var gameScore = document.getElementById('game-score');
 var bestScore = document.getElementById('best-score');
 
- var gameBestScore = 0;//readCookie('game-three-score');
+var gameBestScore = readCookie('game-three-score');
 
 if(gameBestScore == null){
     bestScore.innerHTML = '0';
@@ -54,7 +54,7 @@ answerBox.addEventListener('click', function(event){
 });
 
 function initGame(){
-    characters = characters.slice();
+    characters = listCharacter.slice();
     randomCharacters = [];
     nbQuestionDone = 0;
     nbGoodAnswer = 0;
@@ -64,13 +64,17 @@ function initGame(){
         var toAdd = characters.splice(index, 1)[0];
         randomCharacters.push(toAdd);
     }
+
+    console.log(randomCharacters);
 }
 
 function initQuestion(){
     answerBox.innerHTML = '';
 
     var question = randomCharacters[nbQuestionDone];
-    gameQuestion.innerHTML = ' <img src="img/'+question['url']+'" alt="image du jeu ">';
+
+
+    gameQuestion.innerHTML = ' <img src="img/'+ question.url +'" alt="Personnage du film OSS 117">';
 
     var answer = document.createElement('button');
     answer.classList.add('btn-answer');
@@ -104,7 +108,7 @@ function endGame(){
 
     if(nbGoodAnswer > gameBestScore){
         gameQuestion.innerHTML += ', vous avez battu votre meilleur score !';
-        createCookie('game-two-score', nbGoodAnswer, 30);
+        createCookie('game-three-score', nbGoodAnswer, 30);
 
         bestScore.innerHTML = nbGoodAnswer;
     }
